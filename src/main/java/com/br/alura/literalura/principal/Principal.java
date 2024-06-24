@@ -90,7 +90,6 @@ public class Principal {
     private DataLivraria getLivraria() {
         System.out.println("Digite o nome do livro que deseja buscar:");
 
-        scanner.nextLine();
         var bookName = scanner.nextLine();
 
         String json = consumoApi.obterJson(ENDERECO + bookName.replace(" ", "%20").toLowerCase().trim());
